@@ -1,0 +1,56 @@
+body {
+  background: black;
+  color: #00ff55;
+  font-family: monospace;
+  text-align: center;
+}
+
+#hud span {
+  margin: 15px;
+  font-size: 18px;
+}
+
+#cameraImg {
+  width: 300px;
+  height: 200px;
+  filter: contrast(200%);
+}
+
+button {
+  background: #000;
+  color: #00ff55;
+  border: 1px solid #00ff55;
+  padding: 10px;
+  margin: 5px;
+}
+
+#cameraPanel, #office {
+  margin: 20px;
+}
+
+#jumpscare {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: black;
+  display: none;
+  z-index: 999;
+}
+
+#jumpscare img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flicker {
+  animation: flicker 0.1s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 1; }
+  50% { opacity: 0.2; }
+  100% { opacity: 1; }
+}
