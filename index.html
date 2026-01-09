@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Night Watch: Echo Facility</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1 id="title">Night Watch: Echo Facility</h1>
+
+<div id="hud">
+  <span id="time">12:00 AM</span>
+  <span id="power">Power: 100%</span>
+</div>
+
+<div id="cameraPanel">
+  <img id="cameraImg" src="assets/static.png">
+  <p id="currentCam">CAM: Lobby</p>
+  <button onclick="switchCam(-1)">◀</button>
+  <button onclick="switchCam(1)">▶</button>
+</div>
+
+<div id="office">
+  <button onclick="toggleLeftDoor()">Left Door</button>
+  <button onclick="toggleRightDoor()">Right Door</button>
+  <button onclick="toggleVent()">Vent Seal</button>
+  <button onclick="toggleLight()">Office Light</button>
+</div>
+
+<div id="jumpscare">
+  <img src="assets/jumpscare.png">
+</div>
+
+<audio id="scream" src="assets/scream.mp3"></audio>
+
+<script src="game.js"></script>
+</body>
+</html>
